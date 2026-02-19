@@ -8,7 +8,7 @@ generator client {
 // SQLite for local development (easy setup)
 // For Vercel deployment, you'll switch this to "postgresql" and use a connection string
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
 }
 
 model User {
