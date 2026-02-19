@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: 'AI-powered study planner and tracker designed for students.',
 };
 
+import Providers from '@/components/Providers';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -16,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={outfit.className}>{children}</body>
+      <body className={outfit.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
